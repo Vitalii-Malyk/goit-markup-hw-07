@@ -1,0 +1,99 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+  .team-list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .team-list {
+    width: calc(100% - 24px / 2);
+    gap: 64px 24px;
+  }
+  .section-work {
+    display: none;
+  }
+
+  .clients-list {
+    gap: 72px 24px;
+  }
+
+  .clients-item {
+    width: 168px;
+  }
+  .feature-list {
+    gap: 72px 24px;
+  }
+  .feature-list li {
+    max-width: 356px;
+  }
+  .feature-list .title {
+    justify-content: flex-start;
+  }
+  .feature-list .text {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  .team-list {
+    width: auto;
+    gap: 24px;
+  }
+
+  .section-work {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .section-work .section-title {
+    margin-bottom: 72px;
+  }
+  .work.list {
+    display: flex;
+    gap: 24px;
+  }
+  .clients {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .feature-list .title {
+    margin-top: 8px;
+  }
+
+  .section-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .feature-list li {
+    width: 264px;
+  }
+
+  .features-icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+  }
+  .features-icon {
+    fill: var(--second-color-text);
+  }
+}

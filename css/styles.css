@@ -34,6 +34,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -48,11 +49,11 @@ body {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
 }
 
 .visually-hidden {
@@ -249,54 +250,41 @@ body {
 /*?------------------------------------ features------------------------- */
 
 .feature-list .title {
+  display: flex;
+  justify-content: center;
   color: var(--second-color-text);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 8px;
 }
 
 .feature-list .text {
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 8px;
 }
 
 .section-features {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .feature-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 .feature-list li {
-  width: 264px;
+  max-width: 396px;
 }
 .features-icon-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--second-bg-color);
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-}
-.features-icon {
-  fill: var(--second-color-text);
+  display: none;
 }
 /*?----------------------------- What are we doing----------------------------- */
 .section-work {
-  padding-bottom: 120px;
-}
-
-.section-work .section-title {
-  margin-bottom: 72px;
-}
-.work.list {
-  display: flex;
-  gap: 24px;
+  display: none;
 }
 
 /*?-------------------------------------- Our Team ------------------------------*/
@@ -309,8 +297,10 @@ body {
 }
 .section.section-team {
   background-color: var(--second-bg-color);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .team-list > .cards {
   background-color: var(--main-bg-color);
@@ -329,8 +319,9 @@ body {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
 }
 .section-team .section-title {
   margin-bottom: 72px;
@@ -382,19 +373,20 @@ body {
 
 /*?-------------------------------------- Customers ------------------------------*/
 .clients-list {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 72px;
-  gap: 24px;
+  gap: 72px 16px;
 }
 
 .clients {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .clients-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 .clients-link {
