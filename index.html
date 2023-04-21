@@ -47,14 +47,25 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open button" data-menu-open>
+        <button
+          type="button"
+          class="menu-open button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-        <div class="mob-menu visually-hidden" data-menu>
+        <div
+          class="mob-menu menu-container js-menu-container visually-hidden"
+          id="mobile-menu"
+        >
           <div>
-            <button class="menu-close button" type="button" data-menu-close>
+            <button
+              class="menu-close button menu-toggle js-close-menu"
+              type="button"
+            >
               <svg class="menu-close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-modal"></use>
               </svg>
@@ -127,14 +138,14 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="section section-features">
         <div class="container">
           <h2 class="section-title visually-hidden">features</h2>
@@ -537,7 +548,13 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js" type="module"></script>
-    <script src="./js/menu.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

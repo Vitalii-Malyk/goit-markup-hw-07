@@ -62,7 +62,22 @@
   .hero-title {
     font-size: 36px;
   }
+
+  .modal {
+    width: 392px;
+    min-height: 576px;
+    padding: 16px;
+  }
+
+  .button-send-modal {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
 }
+.modal-textarea {
+    height: 120px;
+  }
 
 /*!=========================== 768 px==================*/
 
@@ -600,6 +615,23 @@
   .addres-list > .list {
     display: flex;
     gap: 40px;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 408px;
+    padding: 24px;
+  }
+  .button-send-modal {
+    left: 119px;
+    bottom: 24px;
+    transform: translateX(0);
+  }
+  .modal-textarea {
+    height: 120px;
   }
 }
 
