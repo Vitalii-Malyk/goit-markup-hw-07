@@ -68,6 +68,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*!----------------------------ХЕДЕР-------------------------------*/
 /* logo */
 
 .link,
@@ -88,8 +90,6 @@ body {
   text-transform: uppercase;
 }
 
-/*!----------------------------ХЕДЕР-------------------------------*/
-
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -99,6 +99,7 @@ body {
 .header > .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /*?----------------------навігація сайту---------------------- */
@@ -115,59 +116,129 @@ body {
   display: flex;
   align-items: center;
 }
-.site-nav {
-  margin-left: 76px;
-  display: flex;
-  gap: 40px;
-}
 
-.score {
-  position: relative;
-}
-.score::after {
-  content: "";
-  position: absolute;
+/*?---------------------------Mob-Menu------------------------------ */
+
+.mob-menu {
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: -27px;
-  width: 100%;
-  height: 4px;
-  background: var(--hover-focus-color);
-  border-radius: 2px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  padding: 24px 24px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.link-menu {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--second-color-text);
+}
+.link-menu:hover,
+.link-menu:focus {
   color: var(--hover-focus-color);
 }
 
-/*?---------------------------адресса------------------------------ */
-
-.addres-list .contacts {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-color-text);
-  transition: color var(--transition-main);
-}
-.addres-list .contacts {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-color-text);
+.nav-menu-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
-.addres-list {
-  display: flex;
+.contacts-menu-tel {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--accent-color);
+}
+.item-contacts-menu {
+  margin-bottom: 40px;
+}
+
+.contacts-menu-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+
+.menu-open {
+  height: 22px;
+  background-color: var(--main-bg-color);
+  border: transparent;
+}
+
+.menu-open-icon {
+  stroke: var(--second-color-text);
+}
+.menu-close {
+  display: block;
   margin-left: auto;
+  margin-bottom: 32px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: var(--second-color-text);
+  outline: transparent;
+  transition: fill var(--transition-main),
+    background-color var(--transition-main);
 }
-.addres-list .contacts:hover,
-.addres-list .contacts:focus {
-  color: var(--hover-focus-color);
+.menu-close-icon {
+  display: block;
+  margin: auto;
 }
 
-.addres-list > .list {
+.menu-close:hover,
+.menu-close:focus {
+  fill: var(--main-bg-color);
+  background-color: var(--hover-focus-color);
+}
+
+.addres-list-menu {
+  margin-bottom: 48px;
+}
+
+.menu-soc-list {
   display: flex;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 37px;
+}
+
+.menu-soc-item {
+  min-width: 40px;
+  min-height: 40px;
+}
+.menu-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--second-bg-color);
+  transition: color var(--transition-main),
+    background-color var(--transition-main);
+}
+
+.menu-soc-link:hover,
+.menu-soc-link:focus {
+  color: var(--second-bg-color);
+  background-color: var(--hover-focus-color);
+}
+.menu-soc-icon {
+  fill: currentColor;
 }
 
 /*!-------------------------------------МАЙН--------------------------------*/
@@ -175,29 +246,42 @@ body {
 /*?------------------------- Герой------------------------------ */
 .hero {
   background-color: var(--second-color-text);
-  max-width: 1440px;
+  max-width: 427px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob-2x.jpg);
+  }
+}
+
 .hero-title {
   color: var(--main-bg-color);
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 32px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  width: 496px;
+  max-width: 320px;
+  text-transform: capitalize;
 }
 
 .hero .button {
@@ -217,7 +301,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  margin-top: 48px;
+  margin-top: 72px;
 
   transition: background-color var(--transition-main);
 }

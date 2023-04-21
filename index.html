@@ -19,7 +19,7 @@
     <title lang="ru">Студія</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <a class="logo link" href="./index.html"
@@ -47,13 +47,92 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open button" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu visually-hidden" data-menu>
+          <div>
+            <button class="menu-close button" type="button" data-menu-close>
+              <svg class="menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+            <nav class="navigation-mob-menu">
+              <ul class="nav-menu-list list">
+                <li class="nav-menu-item">
+                  <a href="./index.html" class="link-menu link">Studio</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="./portfolio.html" class="link-menu link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-menu-item">
+                  <a href="" class="link-menu link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="addres-list-menu link">
+              <ul class="list-contacts-menu list">
+                <li class="item-contacts-menu">
+                  <a class="contacts-menu-tel link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="contacts-menu-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="menu-soc-list list">
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href="">
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href="">
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href="">
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href="">
+                  <svg class="menu-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button" data-modal-open>Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section> -->
       <!-- <section class="section section-features">
@@ -119,6 +198,7 @@
               <img
                 src="./images/monitor.jpg"
                 alt="computer monitor"
+                srcset="./images/monitor-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -127,6 +207,7 @@
               <img
                 src="./images/smartphon-app.jpg"
                 alt="smartphone app"
+                srcset="./images/smartphon-app-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -135,6 +216,7 @@
               <img
                 src="./images/smartphon-in-hand.jpg"
                 alt="smartphone in hand"
+                srcset="./images/smartphon-in-hand-2x.jpg"
                 width="360"
                 height="300"
               />
@@ -150,6 +232,7 @@
                 <img
                   src="./images/mark-guerrero.jpg"
                   alt="Photo Mark Guerrero"
+                  srcset="./images/mark-guerrero-2x.jpg 2x"
                   width="264"
                   height="260"
                 />
@@ -184,6 +267,7 @@
                 <img
                   src="./images/tom-ford.jpg"
                   alt="Photo Tom Ford"
+                  srcset="./images/tom-ford-2x.jpg 2x"
                   width="264"
                   height="260"
                 />
@@ -218,6 +302,7 @@
                 <img
                   src="./images/camila-garcia.jpg"
                   alt="Photo Camila Garcia"
+                  srcset="./images/camila-garcia-2x.jpg 2x"
                   width="264"
                   height="260"
                 />
@@ -252,6 +337,7 @@
                 <img
                   src="./images/daniel-wilson.jpg"
                   alt="Photo Daniel Wilson"
+                  srcset="./images/daniel-wilson-2x.jpg 2x"
                   width="264"
                   height="260"
                 />
@@ -320,7 +406,7 @@
         </div>
       </section> -->
     </main>
-    <footer class="section-footer">
+    <!-- <footer class="section-footer">
       <div class="container">
         <div class="footer-container">
           <div class="footer-logo-container">
@@ -389,60 +475,69 @@
           </div>
         </div>
       </div>
-    </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-            <button class="button-close-modal" type="button" data-modal-close>
-              <svg class="modal-close-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close-modal"></use>
+        <button class="button-close-modal" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form>
+          <label>
+            <span class="modal-text">Name</span>
+            <span class="input-wrap">
+              <input type="text" class="modal-input" name="name" required />
+              <svg class="modal-icon-person" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-icon"></use>
               </svg>
-            </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form>
-              <label>
-                <span class="modal-text">Name</span>
-                <span class="input-wrap">
-                  <input type="text" class="modal-input" name="name" required>
-                  <svg class="modal-icon-person" width="18" height="18">
-                    <use href="./images/icons.svg#icon-person-icon"></use>
-                  </svg>
-                </span>
-              </label>
-              <label>
-                <span class="modal-text">Phone</span>
-                <span class="input-wrap">
-                  <input type="tel" class="modal-input" name="phone" required>
-                  <svg class="modal-icon-contacts" width="18" height="24">
-                    <use href="./images/icons.svg#icon-phone-icon"></use>
-                    </svg>
-                </span>
-              </label>
-              <label>
-                <span class="modal-text">Email</span>
-                <span class="input-wrap">
-                  <input type="email" class="modal-input" name="email" required>
-                  <svg class="modal-icon-contacts" width="18" height="24">
-                    <use href="./images/icons.svg#icon-email-icon"></use>
-                  </svg>
-                </span>
-              </label>
-              <label>
-                <span class="modal-text">Comment</span> 
-                <textarea name="textarea-comment" rows="5" placeholder="Text input" class="modal-textarea" ></textarea>
-              </label>
-              <label class="checkbox-field">
-                  <input type="checkbox" name="checkbox-modal" class="checkbox">
-                  <span class="checkbox-icon-wrap">
-                    <svg class="checkbox-icon" width="10" height="8">
-                      <use href="./images/icons.svg#icon-checkbox"></use>
-                    </svg>
-                  </span>
-                  <p class="checkbox-text">I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a></p> 
-              </label>
-              <button class="button-send-modal" type="submit">Send</button>
-            </form>
+            </span>
+          </label>
+          <label>
+            <span class="modal-text">Phone</span>
+            <span class="input-wrap">
+              <input type="tel" class="modal-input" name="phone" required />
+              <svg class="modal-icon-contacts" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-icon"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal-text">Email</span>
+            <span class="input-wrap">
+              <input type="email" class="modal-input" name="email" required />
+              <svg class="modal-icon-contacts" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-icon"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal-text">Comment</span>
+            <textarea
+              name="textarea-comment"
+              rows="5"
+              placeholder="Text input"
+              class="modal-textarea"
+            ></textarea>
+          </label>
+          <label class="checkbox-field">
+            <input type="checkbox" name="checkbox-modal" class="checkbox" />
+            <span class="checkbox-icon-wrap">
+              <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <p class="checkbox-text">
+              I accept the terms and conditions of the
+              <a href="" class="checkbox-link">Privacy Policy</a>
+            </p>
+          </label>
+          <button class="button-send-modal" type="submit">Send</button>
+        </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
