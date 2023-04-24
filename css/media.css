@@ -34,6 +34,7 @@
     font-size: 36px;
   }
   .menu-soc-list {
+    justify-content: center;
     gap: 56px;
   }
 
@@ -165,6 +166,8 @@
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-bottom: 1px solid #e7e9fc;
   }
 
@@ -200,7 +203,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -27px;
+    bottom: -19px;
     width: 100%;
     height: 4px;
     background: var(--hover-focus-color);
@@ -213,6 +216,9 @@
   }
 
   /*?---------адресса-------- */
+  .addres-list{
+    display: block;
+  }
 
   .addres-list .contacts {
     font-style: normal;
@@ -235,6 +241,9 @@
   }
   .contacts {
     display: block;
+  }
+  .menu-open{
+    display: none;
   }
 }
 /*!=========================== 1158 px==================*/
@@ -634,6 +643,7 @@
     height: 120px;
   }
 }
+
 
 @media screen and (max-width: 1157px) {
   .header > .container {
