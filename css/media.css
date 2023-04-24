@@ -1,10 +1,17 @@
+/*!=========================== 428 px==================*/
+
 @media screen and (min-width: 428px) {
   .container {
-    width: 428px;
+    max-width: 428px;
   }
+
+  /*?--------------- Our Team -----------------*/
+
   .team-list {
     width: 100%;
   }
+
+  /*?----------------- Customers---------------*/
 
   .clients-list {
     display: flex;
@@ -19,26 +26,26 @@
     margin-bottom: 0;
   }
 
+  /*?------------------ ФУТЕР------------------*/
+
   .footer-input {
     width: 398px;
   }
 
   .foter-icon-email {
-    bottom: 0;
-    left: 59%;
-    transform: translateY(-25%);
     fill: var(--main-bg-color);
   }
+
+  /*?------------------ Mob-Menu---------------*/
 
   .contacts-menu-tel {
     font-size: 36px;
   }
   .menu-soc-list {
-    justify-content: center;
     gap: 56px;
   }
 
-  /*?------------------------- Герой------------------------------ */
+  /*?----------------- Герой-------------------*/
 
   .hero {
     max-width: 767px;
@@ -64,6 +71,8 @@
     font-size: 36px;
   }
 
+  /*?---------------- Modal-------------------*/
+
   .modal {
     width: 392px;
     min-height: 576px;
@@ -71,33 +80,33 @@
   }
 
   .button-send-modal {
-  position: absolute;
-  left: 50%;
-  bottom: 24px;
-  transform: translateX(-50%);
-}
-.modal-textarea {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+  }
+  .modal-textarea {
     height: 120px;
   }
-
+}
 /*!=========================== 768 px==================*/
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
-  /*?-------------------------------------- Our Team ------------------------------*/
+  /*?---------------- Our Team----------------*/
 
   .team-list {
     width: calc(100% - 24px / 2);
     gap: 64px 24px;
   }
-  /*?----------------------------- What are we doing----------------------------- */
+  /*?------------- What are we doing----------*/
   .section-work {
     display: none;
   }
 
-  /*?-------------------------------------- Customers ------------------------------*/
+  /*?----------------- Customers--------------*/
 
   .clients-list {
     gap: 72px 24px;
@@ -109,7 +118,7 @@
     margin-right: 0;
   }
 
-  /*?------------------------------------ features------------------------- */
+  /*?----------------- features-------------- */
   .feature-list {
     display: flex;
     flex-wrap: wrap;
@@ -129,7 +138,7 @@
     justify-content: flex-start;
   }
 
-  /*?------------------------- Герой------------------------------ */
+  /*?------------------ Герой-----------------*/
   .hero {
     max-width: 1157px;
     background-image: linear-gradient(
@@ -154,20 +163,18 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    max-width: 496px;
+    min-width: 496px;
   }
 
   .hero .button {
     margin-top: 36px;
   }
 
-  /*?------------------------------------ХЕДЕР------------------------- */
+  /*?------------------ ХЕДЕР-----------------*/
 
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
     border-bottom: 1px solid #e7e9fc;
   }
 
@@ -176,7 +183,7 @@
     align-items: center;
   }
 
-  /*?-------навігація сайту---------- */
+  /*---------навігація сайту---------*/
 
   .site-nav .link {
     color: var(--second-color-text);
@@ -203,7 +210,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -19px;
+    bottom: -27px;
     width: 100%;
     height: 4px;
     background: var(--hover-focus-color);
@@ -215,8 +222,8 @@
     color: var(--hover-focus-color);
   }
 
-  /*?---------адресса-------- */
-  .addres-list{
+  /*-------------адресса----------------*/
+  .addres-list {
     display: block;
   }
 
@@ -242,18 +249,82 @@
   .contacts {
     display: block;
   }
-  .menu-open{
+  .menu-open {
     display: none;
   }
+
+  /*?------------------ ФУТЕР------------------*/
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 496px;
+    justify-content: start;
+    padding-left: 93px;
+  }
+  .footer-logo-soc-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .footer-list {
+    margin-top: 0px;
+    margin-left: 24px;
+  }
+
+  .footer-logo-container {
+    width: 264px;
+    align-items: start;
+  }
+
+  .footer-logo-container > .logo {
+    text-align: start;
+  }
+
+  .text-footer {
+    margin: 16px 0 0 0;
+  }
+
+  .footer-soc-title {
+    text-align: start;
+  }
+
+  .footer-subscribe-wrap {
+    margin-top: 72px;
+  }
+
+  .footer-subscribe-title {
+    text-align: start;
+  }
+
+  .subscribe-field {
+    flex-direction: unset;
+    align-items: start;
+  }
+
+  .footer-form-email {
+    width: 100%;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .button-send-subscribe {
+    margin-top: 0;
+    margin-left: 24px;
+    padding: 0 24px;
+  }
 }
+
 /*!=========================== 1158 px==================*/
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 
-  /*?-------------------------------------- Our Team ------------------------------*/
+  /*?--------------- Our Team-----------------*/
 
   .section.section-team {
     padding-top: 120px;
@@ -261,11 +332,11 @@
   }
 
   .team-list {
-    width: auto;
     gap: 24px;
+    flex-wrap: nowrap;
   }
 
-  /*?----------------------------- What are we doing----------------------------- */
+  /*?----------- What are we doing------------*/
 
   .section-work {
     display: block;
@@ -280,7 +351,7 @@
     gap: 24px;
   }
 
-  /*?-------------------------------------- Customers ------------------------------*/
+  /*?--------------- Customers ---------------*/
   .clients {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -299,7 +370,7 @@
     fill: currentColor;
   }
 
-  /*?------------------------------------ features------------------------- */
+  /*?----------------- features---------------*/
 
   .feature-list {
     display: flex;
@@ -334,7 +405,7 @@
     fill: var(--second-color-text);
   }
 
-  /*?------------------------------------ ФУТЕР------------------------- */
+  /*?------------------ ФУТЕР-----------------*/
 
   .text-footer {
     font-size: 16px;
@@ -371,6 +442,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 0;
+    flex-wrap: nowrap;
   }
   .footer-soc-link {
     width: 100%;
@@ -405,6 +478,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 0;
   }
   .footer-soc-list {
     display: flex;
@@ -422,13 +496,12 @@
   }
   .footer-subscribe-wrap {
     margin-left: 80px;
+    margin-top: 0;
   }
 
   .footer-form-wrap {
-    position: relative;
     display: flex;
     align-items: center;
-    margin-top: 16px;
   }
   .subscribe-field {
     display: flex;
@@ -462,8 +535,6 @@
   .button-send-subscribe {
     width: 165px;
     height: 40px;
-    margin-left: 24px;
-    padding-left: 24px;
     background: var(--accent-color);
     border-radius: 4px;
     border: none;
@@ -483,10 +554,6 @@
   }
 
   .foter-icon-email {
-    position: absolute;
-    top: 50%;
-    left: 405px;
-    transform: translateY(-50%);
     fill: var(--main-bg-color);
   }
 
@@ -495,7 +562,7 @@
     background-color: var(--hover-focus-color);
   }
 
-  /*?------------------------- Герой------------------------------ */
+  /*?------------------ Герой-----------------*/
   .hero {
     max-width: 1440px;
     padding-top: 188px;
@@ -544,7 +611,7 @@
     background-color: var(--hover-focus-color);
   }
 
-  /*?----------------------------ХЕДЕР-------------------------------*/
+  /*?------------------ХЕДЕР------------------*/
 
   .header {
     padding-top: 24px;
@@ -555,9 +622,10 @@
   .header > .container {
     display: flex;
     align-items: center;
+    max-width: 1128px;
   }
 
-  /*?-------навігація сайту---------- */
+  /*-------навігація сайту-----------*/
 
   .site-nav .link {
     color: var(--second-color-text);
@@ -596,7 +664,7 @@
     color: var(--hover-focus-color);
   }
 
-  /*?---------адресса-------- */
+  /*------------адресса----------------*/
 
   .addres-list .contacts {
     font-style: normal;
@@ -626,6 +694,8 @@
     gap: 40px;
   }
 
+  /*?----------------- Modal--------------------*/
+
   .modal {
     position: absolute;
     top: 50%;
@@ -643,7 +713,6 @@
     height: 120px;
   }
 }
-
 
 @media screen and (max-width: 1157px) {
   .header > .container {
