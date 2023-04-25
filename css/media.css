@@ -129,6 +129,9 @@
     max-width: 356px;
     margin-bottom: 0px;
   }
+  .feature-list li:not(:last-child) {
+    margin-bottom: 0;
+  }
   .feature-list .title {
     display: flex;
     justify-content: flex-start;
@@ -380,8 +383,11 @@
 
   .feature-list .title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .section-features {

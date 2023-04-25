@@ -152,16 +152,23 @@ body {
 }
 
 .link-menu {
+  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-color-text);
+  -webkit-transition: color var(--transition-main);
+  -o-transition: color var(--transition-main);
   transition: color var(--transition-main);
 }
 .link-menu:hover,
 .link-menu:focus {
+  color: var(--hover-focus-color);
+}
+
+.link-menu.active {
   color: var(--hover-focus-color);
 }
 
@@ -385,8 +392,12 @@ body {
 }
 .feature-list li {
   max-width: 396px;
+}
+
+.feature-list li:not(:last-child) {
   margin-bottom: 72px;
 }
+
 .features-icon-list {
   display: none;
 }
@@ -420,7 +431,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-list {
@@ -438,16 +448,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+
   gap: 8px;
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 32px;
 }
 
 .team-soc-item {
